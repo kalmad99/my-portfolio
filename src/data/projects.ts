@@ -33,6 +33,12 @@ export interface Project {
   image?: string;
   links?: ProjectLink[];
   sites?: SiteChip[];
+  /** Inline architecture diagram key for flagship detail pages */
+  diagram?:
+    | "scoring-service"
+    | "secure-view"
+    | "new-dashboard"
+    | "creditit-backend";
 }
 
 export const projects: Project[] = [
@@ -48,6 +54,7 @@ export const projects: Project[] = [
       "Specific modules built within a larger fintech platform for invoice financing: scoring, ML-based forecasting, and OCR-based statement extraction.",
     role: "Contributing backend engineer, owning a few specific workstreams.",
     stack: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "scikit-learn", "OCR", "AWS"],
+    diagram: "creditit-backend",
     footnote:
       "I also made a few small frontend contributions, an ops financing-requests page and some facility-configurator tweaks. Minor enough that it's a footnote here, not its own project.",
     detail: {
@@ -75,6 +82,7 @@ export const projects: Project[] = [
       "A production decisioning service for a lending platform. Supports multiple scorecards, scopes decisions by organization and product, and applies a rules layer over banking data to reach approve or reject calls.",
     role: "Primary implementer of the current scoring architecture.",
     stack: ["Python", "Django", "DRF", "PostgreSQL", "Celery", "Redis", "PMML", "Docker"],
+    diagram: "scoring-service",
     detail: {
       problem:
         "Lending partners needed a way to turn raw banking data into approve or reject decisions and approved limits, without hardcoding a new scorecard for every product. That meant supporting several scorecards at once, scoping decisions by organization and product, and keeping things fast even as score requests piled up.",
@@ -100,6 +108,7 @@ export const projects: Project[] = [
       "An operations console for a multi-bank lending platform, supporting per-bank branding, role-based permissions, and admin workflows across loans, merchants, and devices.",
     role: "Created it from scratch, and still lead its architecture and major features.",
     stack: ["Next.js", "TypeScript", "Redux Toolkit", "NextAuth", "Tailwind CSS", "ApexCharts"],
+    diagram: "new-dashboard",
     detail: {
       problem:
         "Bank partners each needed their own branded operations console, but nobody wanted to maintain a separate app per bank. That meant building one platform that could white-label per tenant, enforce a real permission model, and support admin work across loans, merchants, devices, and business-rule configuration.",
@@ -126,6 +135,7 @@ export const projects: Project[] = [
       "A system for sharing sensitive files as view-only content instead of downloadable copies. Server-side encryption, an audit trail on every access, and a hardened Android client.",
     role: "Solo project. Built the backend, the encryption model, and the Android client.",
     stack: ["FastAPI", "Supabase", "Cloudflare R2", "Kotlin", "Android", "PostgreSQL"],
+    diagram: "secure-view",
     detail: {
       problem:
         "Most file-sharing tools assume the recipient ends up with a copy. For sensitive documents, that's often exactly what you don't want: people should be able to view something without easily walking away with it, and every access should be logged. That's not something you can bolt onto a normal file-sharing app after the fact. It has to be the starting point.",

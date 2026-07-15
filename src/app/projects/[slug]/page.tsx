@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { FadeInSection } from "@/components/FadeInSection";
+import { ArchitectureDiagram } from "@/components/diagrams";
 import { StackTag } from "@/components/StackTag";
 import {
   getFlagshipSlugs,
@@ -135,7 +136,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </p>
           )}
 
-          {project.image ? (
+          {project.diagram ? (
+            <section className="rounded-lg border border-border bg-card px-6 py-10">
+              <p className="mb-6 font-mono text-xs uppercase tracking-wider text-muted">
+                Simplified flow
+              </p>
+              <ArchitectureDiagram diagram={project.diagram} />
+            </section>
+          ) : project.image ? (
             <section className="overflow-hidden rounded-lg border border-border bg-card">
               <div className="relative aspect-video w-full">
                 <Image
