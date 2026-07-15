@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- JetBrains Mono inspired geometric K (Tight Padding) -->
+  <text 
+    x="50%" 
+    y="51%" 
+    font-family="JetBrains Mono, system-ui, sans-serif" 
+    font-size="460" 
+    font-weight="800" 
+    fill="#2952E3" 
+    text-anchor="middle" 
+    dominant-baseline="middle">K</text>
+</svg>
