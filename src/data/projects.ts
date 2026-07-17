@@ -74,7 +74,7 @@ export const projects: Project[] = [
   {
     slug: "scoring-service",
     title: "Scoring Service",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "flagship",
     oneLiner:
       "A credit-scoring and loan-decisioning engine built on scorecards and a rules layer.",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
   {
     slug: "new-dashboard",
     title: "QDL Dashboard",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "flagship",
     oneLiner:
       "A multi-tenant banking operations platform, built from scratch and still actively maintained.",
@@ -173,7 +173,7 @@ export const projects: Project[] = [
   {
     slug: "support-telegram-bot",
     title: "Support Telegram Bot",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "standard",
     oneLiner:
       "A multi-tenant, trilingual support bot for bank clients, configured per client without touching code.",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
   {
     slug: "reporting-dashboard",
     title: "Reporting Dashboard",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "standard",
     oneLiner:
       "A loan-operations reporting SPA, built solo around one reusable report component.",
@@ -205,7 +205,7 @@ export const projects: Project[] = [
   {
     slug: "mkopo-easy-admin",
     title: "Mkopo Easy Admin Dashboard",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "standard",
     oneLiner:
       "An admin console for merchant and creditor onboarding, loan config, and device management.",
@@ -221,7 +221,7 @@ export const projects: Project[] = [
   {
     slug: "enterprise-lending-dashboard",
     title: "Enterprise Lending Dashboard",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "standard",
     oneLiner:
       "A greenfield lending portal for corporate and agency clients, built solo and still evolving.",
@@ -253,7 +253,7 @@ export const projects: Project[] = [
   {
     slug: "quantum-tech-website",
     title: "Quantum Technology PLC Website",
-    company: "Quadrant Technologies",
+    company: "Quantum Technology PLC",
     tier: "standard",
     oneLiner:
       "A corporate marketing site, built SEO-first on Next.js with GSAP animation.",
